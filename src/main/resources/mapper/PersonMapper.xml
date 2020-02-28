@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.ssm_test01.mapper.PersonMapper" >
+    <select id="findById" resultType="com.example.ssm_test01.entity.Person" parameterType="int">
+        select * from person where id = #{id}
+    </select>
+    <insert id="addPerson"  parameterType="com.example.ssm_test01.entity.Person" >
+insert into person (id, name, age) values (#{id },#{name},#{age})
+    </insert>
+    <update id="updatePersonById" parameterType="com.example.ssm_test01.entity.Person" >
+        update person set id = #{id},name = #{name} ,age = #{age} where id = #{id}
+    </update>
+    <delete id="deletePersonById" parameterType="int">
+        delete from person where id = #{id}
+    </delete>
+    <select id="queryAllPerson" resultType="com.example.ssm_test01.entity.Person">
+        select * from person
+    </select>
+</mapper>

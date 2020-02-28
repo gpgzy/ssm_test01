@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<script>
+function check() {
+    var pd1 = document.getElementById("pd1").value;
+    var pd2 = document.getElementById("pd2").value;
+    console.log(pd1);
+}
+</script>
+<body>
+<form action="/create" method="post">
+    姓名<input name="name" required><br>
+    手机号<input name="telNo" required><br>
+    所在支部<select name="branch">
+    <option value="下台村党支部">下台村党支部</option>
+    <option value="高平一中党支部">高平一中党支部</option>
+    <option value="丹河花园党支部">丹河花园党支部</option>
+</select>
+    <br>
+    所在党工委
+    <select name="committee">
+        <option value="高平市党工委">高平市党工委</option>
+        <option value="晋城市党工委">晋城市党工委</option>
+        <option value="东北林业大学党工委">东北林业大学党工委</option>
+    </select>
+    <br>
+    密码
+    <input id="pd1" type="password" name="password1" required>
+    <br>
+    确认密码
+    <input id="pd2" type="password" name="password2" required>
+    <button onclick="check();">submit</button>
+</form>
+
+</body>
+</html>
