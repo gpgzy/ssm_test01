@@ -23,7 +23,7 @@ public class Test2 {
 //            }
 //        }
         Paper paper = new Paper();
-        LinkedList<SingleSelectProblem> linkedList = new LinkedList<>();
+        LinkedList<SingleSelectProblem> linkedList = new LinkedList();
         linkedList.add(new SingleSelectProblem(12,"世界上最好的语言？","java","php","c++","a"));
         linkedList.add(new SingleSelectProblem(12,"世界上最好的语言？","java","php","c++","a"));
         paper.setSingleSelectProblemLinkedList(linkedList);

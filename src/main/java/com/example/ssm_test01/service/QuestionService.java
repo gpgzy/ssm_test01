@@ -9,7 +9,7 @@ import java.util.Random;
 public class QuestionService {
     public static void main(String[] args) {
         HashSet<Integer> hashSet = new HashSet();
-        LinkedList<SingleSelectProblem> linkedList = new LinkedList<>();
+        LinkedList<SingleSelectProblem> linkedList = new LinkedList();
         Random r= new Random();
         while (hashSet.size()<10){
             int a= r.nextInt(100);
